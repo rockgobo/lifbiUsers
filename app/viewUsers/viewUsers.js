@@ -10,5 +10,5 @@ angular.module('usersApp.viewUsers', ['ngRoute'])
 }])
 
 .controller('viewUsersCtrl', [function() {
-
+  this.loadUsers = function(){return ["Person 1", "Person 2"]}
 }]);

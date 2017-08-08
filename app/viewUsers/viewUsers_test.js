@@ -6,10 +6,12 @@ describe('usersApp.viewUsers module', function() {
 
   describe('viewUsers controller', function(){
 
-    it('should ....', inject(function($controller) {
+    it('should load users', inject(function($controller) {
       //spec body
       var viewUsersCtrl = $controller('viewUsersCtrl');
-      expect(viewUsersCtrl).toBeDefined();
+      var users = viewUsersCtrl.loadUsers()
+      expect(users).toBeDefined();
+      expect(users.length).toBeGreaterThan(0);
     }));
 
   });
