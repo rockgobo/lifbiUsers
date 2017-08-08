@@ -13,6 +13,5 @@ describe('usersApp.viewUsers module', function() {
       expect(users).toBeDefined();
       expect(users.length).toBeGreaterThan(0);
     }));
-
   });
 });
